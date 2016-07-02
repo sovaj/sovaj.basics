@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<configuration>
+
+  <!-- conf logback par défaut -->
+
+  <!-- installe le bridge et configure JUL -->
+  <contextListener class="fr.generali.fondations.logback.JulPropagator" />
+
+  <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%d{HH:mm:ss.SSS} %-5level %logger{36} - %msg%n</pattern>
+    </encoder>
+  </appender>
+
+  <logger name="org.hibernate.cfg" level="warn" />
+  <logger name="org.hibernate.cfg.Environment" level="info" />
+  <logger name="org.hibernate.cfg.SettingsFactory" level="info" />
+  <!--<logger name="org.hibernate.SQL" level="debug" />-->
+  <!--<logger name="org.hibernate.type.descriptor.sql" level="trace" />-->
+
+  <logger name="org.springframework" level="warn" />
+
+  <root level="warn">
+    <appender-ref ref="CONSOLE" />
+  </root>
+
+</configuration>
