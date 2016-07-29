@@ -1,3 +1,3 @@
-[![Build Status](https://travis-ci.org/akveo/ng2-admin.svg?branch=master)](https://travis-ci.org/akveo/ng2-admin)
+[![Build Status](https://travis-ci.org/sovaj/sovaj.basics.svg?branch=master)](https://travis-ci.org/sovaj/sovaj.basics)
 
 # basics
