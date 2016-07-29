@@ -2,17 +2,17 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.mdubois.basics</groupId>
+    <groupId>org.sovaj.basics</groupId>
     <artifactId>basics-parent</artifactId>
     <version>1.0.0.0-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Basics tool for a good application</name>
     <description>Project to help in developing robust applications</description>
-    <url>https://github.com/baloo2401/mdubois.basics</url>
+    <url>https://github.com/sovaj/sovaj.basics</url>
 
     <issueManagement>
-        <url>https://github.com/baloo2401/mdubois.basics/issues</url>
+        <url>https://github.com/sovaj/sovaj.basics/issues</url>
         <system>GitHub Issues</system>
     </issueManagement>
 
@@ -121,7 +121,7 @@
 
             <!-- Project module-->
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-hibernate</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -197,32 +197,32 @@
             </dependency>
 
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-spring-batch</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-spring-batch-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-profiling</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-test</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -582,7 +582,7 @@
                 <version>${jspf-core.version}</version>
             </dependency>
             <dependency>
-                <groupId>org.mdubois.basics</groupId>
+                <groupId>org.sovaj.basics</groupId>
                 <artifactId>basics-plugin-test-interface</artifactId>
                 <version>${project.version}</version>
             </dependency>

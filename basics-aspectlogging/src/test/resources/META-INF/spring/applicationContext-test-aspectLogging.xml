@@ -4,12 +4,12 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="org.mdubois.basics.test.aspectlogging"/>
+    <context:component-scan base-package="org.sovaj.basics.test.aspectlogging"/>
 
     <context:property-placeholder location="META-INF/tracer.properties"/>
     <import resource="classpath:META-INF/spring/applicationContext-aspectLogging.xml"/>
 
     <aop:config>
-        <aop:advisor advice-ref="aspectTracer" pointcut="execution(public * org.mdubois.basics.test..*(..))"/>
+        <aop:advisor advice-ref="aspectTracer" pointcut="execution(public * org.sovaj.basics.test..*(..))"/>
     </aop:config>
 </beans>
