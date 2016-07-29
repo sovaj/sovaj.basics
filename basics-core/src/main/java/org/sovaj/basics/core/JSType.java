@@ -5,8 +5,6 @@
  */
 package org.sovaj.basics.core;
 
-import jdk.nashorn.internal.runtime.Undefined;
-
 /**
  *
  * @author mdubois2
