@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.sovaj.basics</groupId>
+        <groupId>io.sovaj.basics</groupId>
         <artifactId>basics-parent</artifactId>
         <version>1.0.0.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>org.sovaj.basics</groupId>
+    <groupId>io.sovaj.basics</groupId>
     <artifactId>basics-logback</artifactId>
     <name>sovaj :: ${project.artifactId} :: ${project.packaging}</name>
     <description>Outil pour logback, SLF4j v1.6</description>
@@ -60,7 +60,7 @@
             <scope>test</scope>
         </dependency>
         <dependency>
-            <groupId>org.sovaj.basics</groupId>
+            <groupId>io.sovaj.basics</groupId>
             <artifactId>basics-core</artifactId>
             <type>jar</type>
         </dependency>
