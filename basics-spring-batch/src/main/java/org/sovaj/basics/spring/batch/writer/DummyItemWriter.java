@@ -9,12 +9,12 @@ import java.util.List;
 /**
  *
  * @author Mina Dawoud
- * @param <T>
+ * @param <T> The type of element
  */
 public class DummyItemWriter<T> implements ItemWriter<T> {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(DummyItemWriter.class);
-    private boolean debugEnabled = LOGGER.isDebugEnabled();
+    private final boolean debugEnabled = LOGGER.isDebugEnabled();
 
     @Override
     public void write(List<? extends T> items) throws Exception {

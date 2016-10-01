@@ -45,9 +45,10 @@ public class JdbcJobExecutionDAO extends JdbcJobExecutionDao implements JobExecu
     }
 
     /**
-     * @param executionId
-     * @return
+     * @param executionId - The job id to retrieve
+     * @return The {@link JobParameter} of the job
      */
+    @Override
     protected JobParameters getJobParameters(Long executionId) {
         final Map<String, JobParameter> map = new HashMap<>();
         RowCallbackHandler handler = new RowCallbackHandler() {
