@@ -5,7 +5,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created by MFerlan1 on 11/3/2014.
+ * @author Manuel MFerland
+ * @deprecated
  */
 @Deprecated
 //Use ClasspathRetriever

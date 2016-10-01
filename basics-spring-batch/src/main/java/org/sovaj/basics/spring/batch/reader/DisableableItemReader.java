@@ -10,7 +10,7 @@ import org.springframework.batch.item.UnexpectedInputException;
 
 /**
  *
- * @author François Lecomte
+ * @author Francois Lecomte
  * @param <T> The type of element
  */
 public class DisableableItemReader<T> extends ItemReaderWrapper<T> {

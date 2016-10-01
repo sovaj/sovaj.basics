@@ -3,7 +3,8 @@ package org.sovaj.basics.reloadable;
 import org.apache.commons.io.IOUtils;
 
 /**
- * Created by MFerlan1 on 11/3/2014.
+ * 
+ * @author Manuel MFerland
  */
 public class ClasspathRetriever implements IRetriever {
 

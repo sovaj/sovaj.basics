@@ -7,14 +7,14 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * A listener who puts at disposal a LOGGER phase (job, step, chunk,   read,
- * process, write). Default © must loggers are built on the model   following :
+ * A listener who puts at disposal a LOGGER phase (job, step, chunk, read,
+ * process, write). Default must loggers are built on the model following :
  * <code>getClass().getName() + '.' + getClass().getSimpleName() + '#' + phase</code>
  * .<br>
- * It is possible to add phases and change the names of loggers   for each
+ * It is possible to add phases and change the names of logger for each
  * phase.
  *
- * @author François Lecomte
+ * @author Francois Lecomte
  *
  */
 public abstract class AbstractLoggingExecutionListener {

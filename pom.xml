@@ -28,8 +28,8 @@
         <url>https://github.com/sovaj/sovaj.basics</url>
         <connection>scm:git:git://github.com/sovaj/sovaj.basics.git</connection>
         <developerConnection>scm:git:git@github.com:sovaj/sovaj.basics.git</developerConnection>
-      <tag>basics-parent-1.0.0.0</tag>
-  </scm>
+        <tag>basics-parent-1.0.0.0</tag>
+    </scm>
 
     <developers>
         <developer>
@@ -54,6 +54,7 @@
 
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>1.7</java.version>
 
         <org.springframework-version>4.1.8.RELEASE</org.springframework-version>

@@ -18,9 +18,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Outils pour les {@link Factory} al�atoires.
+ * Tools for {@link Factory} random
  * 
-
  */
 public final class RandomFactoryToolkit {
 
@@ -121,9 +120,9 @@ public final class RandomFactoryToolkit {
     }
 
     /**
-     * @param <O> Type de la donn�e � g�n�rer
-     * @param type Type de la donn�e � g�n�rer
-     * @return un {@link Factory} pour le type de donn�es sp�cifi�
+     * @param <O> Data type to generate
+     * @param type Data type to generate
+     * @return a {@link Factory} for Data type to generate
      */
     @SuppressWarnings({"unchecked", "rawtypes" })
     public static <O> Factory<O> getInstance(Class<O> type) {
@@ -187,8 +186,9 @@ public final class RandomFactoryToolkit {
     /**
      * Ajoute un {@link Factory} au registre.
      * 
-     * @param type
-     * @param generateur
+     * @param <O> Data type to register
+     * @param type Data type to register
+     * @param generateur Data type generator
      */
     public static <O> void register(Class<O> type, Factory<O> generateur) {
         registry.put(type, generateur);

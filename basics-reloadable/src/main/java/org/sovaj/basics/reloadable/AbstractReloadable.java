@@ -1,7 +1,8 @@
 package org.sovaj.basics.reloadable;
 
 /**
- * Created by MFerlan1 on 11/3/2014.
+ * 
+ * @author Manuel MFerland
  */
 public abstract class AbstractReloadable implements IReloadable {
 

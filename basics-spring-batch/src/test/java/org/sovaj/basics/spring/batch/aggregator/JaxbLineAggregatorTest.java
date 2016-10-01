@@ -16,8 +16,8 @@ import java.io.OutputStream;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Created by MLi2 on 17/03/14, 12:58 PM To change this template use File |
- * Settings | File Templates.
+ * 
+ * @author Mickael Dubois
  */
 @RunWith(JMockit.class)
 public class JaxbLineAggregatorTest {

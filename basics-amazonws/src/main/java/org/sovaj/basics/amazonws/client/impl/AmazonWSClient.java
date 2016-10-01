@@ -32,14 +32,14 @@ public class AmazonWSClient implements IAmazonWSClient {
     public static final String URL_SUB_DIRECTORY_SEPARATOR = "/";
     private static final Logger LOGGER = LoggerFactory.getLogger(AmazonWSClient.class);
 
-    private ClientConfiguration clientConfig;
-    private AWSCredentials credentials;
-    private AmazonS3 conn;
-    private String s3Bucket;
-    private String S3AmazonawsComWebUrl;
+    private final ClientConfiguration clientConfig;
+    private final AWSCredentials credentials;
+    private final AmazonS3 conn;
+    private final String s3Bucket;
+    private final String S3AmazonawsComWebUrl;
 
     /**
-     * @param wsConfig
+     * @param wsConfig the amazon configuration
      */
     public AmazonWSClient(AmazonWsConfig wsConfig) {
         this.credentials = new BasicAWSCredentials(wsConfig.getAccessKey(), wsConfig.getSecretKey());

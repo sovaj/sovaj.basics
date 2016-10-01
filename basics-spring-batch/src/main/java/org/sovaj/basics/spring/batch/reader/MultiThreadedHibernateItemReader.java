@@ -334,7 +334,7 @@ public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, Initi
     }
 
     /**
-     * @author François Lecomte
+     * @author Francois Lecomte
      * @param <T>
      */
     private static class ResultsHolder<T> {
