@@ -1,11 +1,8 @@
 package org.sovaj.basics.amazonws.client.impl;
 
 /**
- * Created with IntelliJ IDEA.
- * User: ZOuarab1
- * Date: 10/22/13
- * Time: 3:00 PM
- * To change this template use File | Settings | File Templates.
+ * 
+ * @author Mickael Dubois
  */
 public class AmazonWsConfig {
     private final String accessKey;

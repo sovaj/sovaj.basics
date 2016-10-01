@@ -3,13 +3,8 @@ package org.sovaj.basics.amazonws.client;
 import java.io.InputStream;
 
 /**
- * Created with IntelliJ IDEA.
- * User: ZOuarab1
- * Date: 11/1/13
- * Time: 10:15 AM
- * To change this template use File | Settings | File Templates.
- *
- *
+ * 
+ * @author Mickael Dubois
  */
 public class AmazonS3Content {
 

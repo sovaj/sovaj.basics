@@ -16,7 +16,7 @@ import org.springframework.batch.core.scope.context.ChunkContext;
 /**
  * Polyvalent Spring batch listener for logging.
  * 
- * @author FranÃ§ois Lecomte
+ * @author François Lecomte
  */
 public class LoggingExecutionListener<T, S> extends AbstractLoggingExecutionListener implements StepExecutionListener,
                 ChunkListener, ItemReadListener<T>, ItemProcessListener<T, S>, ItemWriteListener<S>, SkipListener<T, S> {

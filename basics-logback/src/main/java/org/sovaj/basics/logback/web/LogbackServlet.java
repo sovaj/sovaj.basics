@@ -25,8 +25,7 @@ import ch.qos.logback.core.read.CyclicBufferAppender;
 import org.sovaj.basics.logback.layout.json.JSONLayout;
 
 /**
- * Une servlet qui affiche les logs. Requiert qu'un {@link CyclicBufferAppender}
- * (par d�faut nomm� "BUFFER") soit install�.
+ * Servlet that return logs. Required a {@link CyclicBufferAppender} name "BUFFER" to be defined
  *
  * @author Mickael Dubois
  */
@@ -54,10 +53,10 @@ public class LogbackServlet extends HttpServlet {
     }
 
     /**
-     * @param request
-     * @param response
-     * @throws javax.servlet.ServletException
-     * @throws java.io.IOException
+     * @param request - The {@link HttpServletRequest}
+     * @param response - The {@link HttpServletResponse}
+     * @throws javax.servlet.ServletException No CyclicBufferAppender named BUFFER found in logger
+     * @throws java.io.IOException Can't write to the ouput stream
      */
     @Override
     @SuppressWarnings("unchecked")

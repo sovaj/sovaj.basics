@@ -6,10 +6,8 @@ import javax.management.MBeanServer;
 import java.lang.management.ManagementFactory;
 
 /**
- * Created with IntelliJ IDEA.
- * User: LZhang1
- * Date: 3/6/14
- * Time: 2:20 PM
+ * 
+ * @author Mickael Dubois
  */
 public class HeapDumper {
     // This is the name of the HotSpot Diagnostic MBean

@@ -4,8 +4,8 @@ import org.junit.Before;
 import org.junit.Test;
 
 /**
- * Created with IntelliJ IDEA. User: ZOuarab1 Date: 11/11/13 Time: 10:20 AM To
- * change this template use File | Settings | File Templates.
+ * 
+ * @author Mickael Dubois
  */
 public class AmazonWSClientTest {
 

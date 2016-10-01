@@ -14,9 +14,9 @@ import org.springframework.util.Assert;
 import org.springframework.util.ClassUtils;
 
 /**
- * 
+ *
  * @author Mickael Dubois
- * @param <T>
+ * @param <T> The type of element
  */
 public class ItemReaderWrapper<T> implements ItemStreamReader<T>, InitializingBean, BeanNameAware {
 
@@ -32,7 +32,6 @@ public class ItemReaderWrapper<T> implements ItemStreamReader<T>, InitializingBe
 
     /**
      * {@inheritDoc}
-     * @throws java.lang.Exception
      */
     @Override
     public void afterPropertiesSet() throws Exception {
@@ -41,12 +40,11 @@ public class ItemReaderWrapper<T> implements ItemStreamReader<T>, InitializingBe
 
     /**
      * {@inheritDoc}
-     * @param executionContext
      */
     @Override
     public void open(ExecutionContext executionContext) throws ItemStreamException {
         if (itemReader instanceof ItemStream) {
-            ((ItemStream ) itemReader).open(executionContext);
+            ((ItemStream) itemReader).open(executionContext);
         }
     }
 
@@ -56,7 +54,7 @@ public class ItemReaderWrapper<T> implements ItemStreamReader<T>, InitializingBe
     @Override
     public void update(ExecutionContext executionContext) throws ItemStreamException {
         if (itemReader instanceof ItemStream) {
-            ((ItemStream ) itemReader).update(executionContext);
+            ((ItemStream) itemReader).update(executionContext);
         }
     }
 
@@ -66,14 +64,12 @@ public class ItemReaderWrapper<T> implements ItemStreamReader<T>, InitializingBe
     @Override
     public void close() throws ItemStreamException {
         if (itemReader instanceof ItemStream) {
-            ((ItemStream ) itemReader).close();
+            ((ItemStream) itemReader).close();
         }
     }
 
     /**
      * {@inheritDoc}
-     * @return 
-     * @throws java.lang.Exception
      */
     @Override
     public T read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
@@ -89,7 +85,6 @@ public class ItemReaderWrapper<T> implements ItemStreamReader<T>, InitializingBe
 
     /**
      * {@inheritDoc}
-     * @param name
      */
     @Override
     public void setBeanName(String name) {

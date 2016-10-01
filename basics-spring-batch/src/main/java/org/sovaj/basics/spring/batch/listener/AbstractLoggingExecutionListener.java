@@ -1,6 +1,4 @@
-
 package org.sovaj.basics.spring.batch.listener;
-
 
 import java.util.HashMap;
 import java.util.Map;
@@ -9,16 +7,15 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Un listener qui met √† disposition un LOGGER par phase (job, step, chunk,
- read, process, write). Par d√©faut les LOGGERs sont construits sur le mod√®le
- suivant :
- <code>getClass().getName() + '.' + getClass().getSimpleName() + '#' + phase</code>
+ * A listener who puts at disposal a LOGGER phase (job, step, chunk, † read,
+ * process, write). Default © must loggers are built on the model † following :
+ * <code>getClass().getName() + '.' + getClass().getSimpleName() + '#' + phase</code>
  * .<br>
- Il est possible d'ajouter des phases, et de modifier les noms des LOGGERs
- pour chaque phase.
- * 
- * @author Fran√ßois Lecomte
-
+ * It is possible to add phases and change the names of loggers † for each
+ * phase.
+ *
+ * @author FranÁois Lecomte
+ *
  */
 public abstract class AbstractLoggingExecutionListener {
 
@@ -101,7 +98,7 @@ public abstract class AbstractLoggingExecutionListener {
     }
 
     /**
-     * @param phase
+     * @param phase - The phase
      * @return {@link Logger}
      */
     protected Logger getLogger(String phase) {
@@ -114,8 +111,8 @@ public abstract class AbstractLoggingExecutionListener {
                     if (loggerName == null) {
                         loggerName = getClass().getName() + '.' + getClass().getSimpleName() + '#' + phase;
                         this.LOGGER
-                                        .warn("No 'loggerName' found for phase '{}' ; using default : {}", phase,
-                                                        loggerName);
+                                .warn("No 'loggerName' found for phase '{}' ; using default : {}", phase,
+                                        loggerName);
                     }
                     logger = LoggerFactory.getLogger(loggerName);
                     loggers.put(phase, logger);

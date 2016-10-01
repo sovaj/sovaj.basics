@@ -1,7 +1,6 @@
 package org.sovaj.basics.logback.web;
 
 import java.io.IOException;
-import java.io.OutputStream;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -17,20 +16,23 @@ import java.io.PrintWriter;
 import java.util.List;
 import org.apache.commons.lang.StringUtils;
 
+/**
+ *
+ * @author mickael
+ */
 public class ConfigLogbackServlet extends HttpServlet {
 
     final Logger rootLogger = (Logger) LoggerFactory.getLogger(Logger.ROOT_LOGGER_NAME);
     final LoggerContext loggerRepository = rootLogger.getLoggerContext();
 
     /**
-     * @param request
-     * @param response
-     * @throws javax.servlet.ServletException
-     * @throws java.io.IOException
+     * @param request - The {@link HttpServletRequest}
+     * @param response - The {@link HttpServletResponse}
+     * @throws java.io.IOException Can't write to the ouput stream
      */
     @Override
     @SuppressWarnings("unchecked")
-    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws  IOException {
 
         final List<Logger> loggers = loggerRepository.getLoggerList();
         PrintWriter responseWriter = response.getWriter();

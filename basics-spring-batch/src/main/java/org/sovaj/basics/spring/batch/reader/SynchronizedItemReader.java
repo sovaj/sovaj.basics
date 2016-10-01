@@ -11,7 +11,7 @@ import org.springframework.batch.item.UnexpectedInputException;
 /**
  * 
  * @author Mickael Dubois
- * @param <T>
+ * @param <T> The type of element
  */
 public class SynchronizedItemReader<T> implements ItemReader<T>, ItemStream {
 
@@ -19,8 +19,8 @@ public class SynchronizedItemReader<T> implements ItemReader<T>, ItemStream {
 
     /**
      * {@inheritDoc}
-     * @return 
-     * @throws java.lang.Exception
+     * @return  The element
+     * @throws java.lang.Exception can't read
      */
     @Override
     public synchronized T read() throws Exception, UnexpectedInputException, ParseException,
@@ -30,7 +30,6 @@ public class SynchronizedItemReader<T> implements ItemReader<T>, ItemStream {
 
     /**
      * {@inheritDoc}
-     * @param executionContext
      */
     @Override
     public void open(final ExecutionContext executionContext) throws ItemStreamException {

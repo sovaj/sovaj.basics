@@ -7,7 +7,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * Created with IntelliJ IDEA. User: LZhang1 Date: 3/11/14 Time: 5:50 PM
+ * 
+ * @author Mickael Dubois
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = {"classpath:META-INF/spring/applicationContext-test-aspectLogging.xml"})

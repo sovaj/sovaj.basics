@@ -15,7 +15,7 @@ import java.io.IOException;
  *
  *
  * @author Mickael Dubois
- * @param <T>
+ * @param <T> The type of element
  */
 public class JaxbLineAggregator<T> implements LineAggregator<T>, InitializingBean {
 
@@ -68,9 +68,7 @@ public class JaxbLineAggregator<T> implements LineAggregator<T>, InitializingBea
     /**
      * Set the list of Java classes to be recognized by a newly created
      * JAXBContext.
-     * <p>
-     * Setting either this property, {@link #setContextPath "contextPath"} or
-     * {@link #setPackagesToScan "packagesToScan"} is required.
+     * @param classesToBeBound the classes to bound
      */
     public void setClassToBeBound(Class<?> classesToBeBound) {
         this.classToBeBound = classesToBeBound;
@@ -79,15 +77,24 @@ public class JaxbLineAggregator<T> implements LineAggregator<T>, InitializingBea
     /**
      * Return the list of Java classes to be recognized by a newly created
      * JAXBContext.
+     * @return The classes bounded
      */
     public Class<?> getClassToBeBound() {
         return this.classToBeBound;
     }
 
+    /**
+     * Get the encoding of the file
+     * @return The encoding of the file
+     */
     public String getEncoding() {
         return encoding;
     }
 
+    /**
+     * Set the encoding of the file
+     * @param encoding - The encoding of the file to set
+     */
     public void setEncoding(String encoding) {
         this.encoding = encoding;
     }

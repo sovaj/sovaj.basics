@@ -23,7 +23,7 @@ public abstract class JSONLayoutBase<E> extends LayoutBase<E> {
      * controls formatting and consists of a mix of literal content and
      * conversion specifiers.
      *
-     * @param conversionPattern
+     * @param conversionPattern - The conversion pattern
      */
     public void setPattern(String conversionPattern) {
         pattern = conversionPattern;
@@ -32,7 +32,7 @@ public abstract class JSONLayoutBase<E> extends LayoutBase<E> {
     /**
      * Returns the value of the <b>ConversionPattern </b> option.
      *
-     * @return
+     * @return The conversion pattern
      */
     public String getPattern() {
         return pattern;
@@ -64,7 +64,7 @@ public abstract class JSONLayoutBase<E> extends LayoutBase<E> {
      * Returns a map where the default converter map is merged with the map
      * contained in the context.
      *
-     * @return
+     * @return The effective map
      */
     public Map<String, String> getEffectiveConverterMap() {
         Map<String, String> effectiveMap = new HashMap<>();

@@ -22,7 +22,7 @@ import org.springframework.util.ClassUtils;
 
 /**
  *
- * @param <T>
+ * @param <T> The type of element
  * @author Mickael Dubois
  */
 public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, InitializingBean, BeanNameAware {
@@ -70,7 +70,7 @@ public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, Initi
     /**
      * Check mandatory properties.
      *
-     * @throws java.lang.Exception
+     * @throws java.lang.Exception if property not set
      * @see
      * org.springframework.beans.factory.InitializingBean#afterPropertiesSet()
      */
@@ -89,9 +89,6 @@ public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, Initi
 
     /**
      * {@inheritDoc}
-     *
-     * @return
-     * @throws java.lang.Exception
      */
     @Override
     public T read() throws Exception {
@@ -109,7 +106,8 @@ public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, Initi
     }
 
     /**
-     * @return @throws Exception
+     * @return The type of element
+     * @throws Exception if local read fails
      */
     private T localGet() throws Exception {
 
@@ -189,9 +187,8 @@ public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, Initi
     /**
      * local read ; if queue is still empty, let's fetch results from database
      *
-     * @param queue
-     * @return
-     * @throws Exception
+     * @return The list of elment
+     * @throws Exception when db read fails
      */
     private List<T> dbRead() throws Exception {
         // let's fetch some data from database
@@ -286,8 +283,6 @@ public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, Initi
 
     /**
      * {@inheritDoc}
-     *
-     * @param name
      */
     @Override
     public void setBeanName(final String name) {
@@ -339,7 +334,7 @@ public class MultiThreadedHibernateItemReader<T> implements ItemReader<T>, Initi
     }
 
     /**
-     * @author FranÃ§ois Lecomte
+     * @author François Lecomte
      * @param <T>
      */
     private static class ResultsHolder<T> {

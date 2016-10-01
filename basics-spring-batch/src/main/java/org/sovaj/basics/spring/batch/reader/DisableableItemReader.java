@@ -10,8 +10,8 @@ import org.springframework.batch.item.UnexpectedInputException;
 
 /**
  *
- * @author FranÃ§ois Lecomte
- * @param <T>
+ * @author François Lecomte
+ * @param <T> The type of element
  */
 public class DisableableItemReader<T> extends ItemReaderWrapper<T> {
 
@@ -39,8 +39,8 @@ public class DisableableItemReader<T> extends ItemReaderWrapper<T> {
 
     /**
      * {@inheritDoc}
-     * @return 
-     * @throws java.lang.Exception
+     * @return T
+     * @throws java.lang.Exception In case of error
      */
     @Override
     public T read() throws Exception, UnexpectedInputException, ParseException, NonTransientResourceException {
@@ -66,7 +66,7 @@ public class DisableableItemReader<T> extends ItemReaderWrapper<T> {
     }
 
     /**
-     * @param disable
+     * @param disable - to disable or not
      */
     public void setDisabled(boolean disable) {
         this.disabled = disable;

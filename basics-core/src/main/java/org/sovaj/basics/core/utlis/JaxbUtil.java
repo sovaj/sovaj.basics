@@ -7,11 +7,8 @@ import javax.xml.namespace.QName;
 import java.io.ByteArrayInputStream;
 
 /**
- * Created with IntelliJ IDEA.
- * User: ZOuarab1
- * Date: 1/27/14
- * Time: 5:14 PM
- * To change this template use File | Settings | File Templates.
+ * 
+ * @author Mickael Dubois
  */
 public class JaxbUtil {
 

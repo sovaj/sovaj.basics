@@ -24,8 +24,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Created with IntelliJ IDEA. User: ZOuarab1 Date: 10/22/13 Time: 1:53 PM To
- * change this template use File | Settings | File Templates.
+ * 
+ * @author Mickael Dubois
  */
 public class AmazonWSClient implements IAmazonWSClient {
 

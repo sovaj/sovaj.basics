@@ -18,8 +18,8 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 /**
- * Created with IntelliJ IDEA. User: ZOuarab1 Date: 10/22/13 Time: 4:37 PM To
- * change this template use File | Settings | File Templates.
+ * 
+ * @author Mickael Dubois
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(locations = "classpath:applicationContext-amazonws.xml")

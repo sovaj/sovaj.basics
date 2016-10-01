@@ -5,11 +5,8 @@ import org.springframework.util.DigestUtils;
 import java.io.UnsupportedEncodingException;
 
 /**
- * Created with IntelliJ IDEA.
- * User: ZOuarab1
- * Date: 1/28/14
- * Time: 11:46 AM
- * To change this template use File | Settings | File Templates.
+ * 
+ * @author Mickael Dubois
  */
 public class Md5HashUtil {
 
