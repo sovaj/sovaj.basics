@@ -74,7 +74,7 @@
         <hibernate.version>4.1.10.Final</hibernate.version>
         <!-- Dependency for basics-test -->
         <aspectj.version>1.6.10</aspectj.version>
-        <jamon.version>2.74</jamon.version>
+        <jamon.version>2.81</jamon.version>
         <!-- Dependency for basics-test -->
         <junit.version>4.11</junit.version>
         <dbunit.version>2.4.8</dbunit.version>
@@ -679,6 +679,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.10.4</version>
                 <executions>
                     <execution>
                         <id>attach-javadocs</id>
@@ -702,19 +703,13 @@
     </build>
 
     <distributionManagement>
-
-        <!-- Publish versioned releases here -->
-        <repository>
-            <id>Edubois Release</id>
-            <name>My releases</name>
-            <url>http://nexus.edubois.org/content/repositories/releases</url>
-        </repository>
-
-        <!-- Publish snapshots here -->
         <snapshotRepository>
-            <id>Edubois Snapshot</id>
-            <name>My snapshots</name>
-            <url>http://nexus.edubois.org/content/repositories/snapshots</url>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
         </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
 </project>
