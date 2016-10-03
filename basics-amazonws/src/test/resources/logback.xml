@@ -5,14 +5,14 @@
 
     <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
         <!-- encoders are assigned the type ch.qos.logback.classic.encoder.PatternLayoutEncoder
-            by default -->
+        by default -->
         <encoder>
             <pattern>%d{dd MMM yyyy;HH:mm:ss.SSS} [%thread] %-5level %logger{5} - %msg%n
             </pattern>
         </encoder>
     </appender>
     <logger name="org.apache.commons.digester.Digester" level="FATAL"/>
-    <logger name="com.ypg" level="INFO"/>
+    <logger name="io.sovaj" level="INFO"/>
     <logger name="org.springframework" level="INFO"/>
     <logger name="org.eclipse.jetty.util.log" level="INFO"/>
     <!-- Strictly speaking, the level attribute is not necessary since -->

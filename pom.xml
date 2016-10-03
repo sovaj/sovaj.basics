@@ -32,20 +32,20 @@
 
     <developers>
         <developer>
-            <email>dubois.mickael@gmail.com</email>
             <name>Dubois Mickael</name>
+            <email>dubois.mickael@gmail.com</email>
             <url>https://github.com/sovaj</url>
             <id>sovaj</id>
         </developer>
         <developer>
-            <email>Manuel Ferland</email>
-            <name>Dubois Mickael</name>
+            <name>Manuel Ferland</name>
+            <email>manuel.ferland@yahoo.ca</email>
             <url>https://github.com/manolomtl</url>
             <id>manolomtl</id>
         </developer>
         <developer>
-            <email>Manuel Ferland</email>
-            <name>pfernand@gmail.com</name>
+            <name>Pablo A. Fernandez Varela</name>
+            <email>pfernand@gmail.com</email>
             <url>https://github.com/pfernan</url>
             <id>pfernan</id>
         </developer>
