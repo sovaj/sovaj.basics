@@ -2,8 +2,8 @@
 <beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-  <bean id="bean" class="org.sovaj.basics.test.random.spring.RandomProxyFactoryBean">
-    <property name="objectType" value="org.sovaj.basics.test.random.MyInterface" />
+  <bean id="bean" class="io.sovaj.basics.test.random.spring.RandomProxyFactoryBean">
+    <property name="objectType" value="io.sovaj.basics.test.random.MyInterface" />
   </bean>
 
 </beans>

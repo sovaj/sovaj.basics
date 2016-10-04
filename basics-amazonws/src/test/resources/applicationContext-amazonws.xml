@@ -4,14 +4,14 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
     <context:annotation-config/>
-    <bean id="amazonWsConfig" class="org.sovaj.basics.amazonws.client.impl.AmazonWsConfig">
+    <bean id="amazonWsConfig" class="io.sovaj.basics.amazonws.client.impl.AmazonWsConfig">
         <constructor-arg name="accessKey" value="AKIAIJYAB7K6MB2Q63KQ"/>
 
         <constructor-arg name="secretKey" value="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"/>
         <constructor-arg name="s3Bucket" value="static.cms.yp.ca"/>
         <constructor-arg name="s3AmazonawsComWebUrl" value="http://s3.amazonaws.com/static.cms.yp.ca"/>
     </bean>
-    <bean id="amazonWSClient" class="org.sovaj.basics.amazonws.client.impl.AmazonWSClient">
+    <bean id="amazonWSClient" class="io.sovaj.basics.amazonws.client.impl.AmazonWSClient">
         <constructor-arg name="wsConfig" ref="amazonWsConfig"/>
     </bean>
 
