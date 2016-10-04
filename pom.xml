@@ -124,7 +124,6 @@
         <module>basics-logback</module>
         <module>basics-profiling</module>
         <module>basics-reloadable</module>
-        <module>basics-rule</module>
         <module>basics-spring-batch</module>
         <module>basics-spring-batch-core</module>
         <module>basics-spring-security</module>

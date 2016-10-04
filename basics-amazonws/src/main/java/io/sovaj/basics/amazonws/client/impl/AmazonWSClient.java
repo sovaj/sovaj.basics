@@ -94,37 +94,6 @@ public class AmazonWSClient implements IAmazonWSClient {
     }
 
     @Override
-    @Deprecated
-    public String deployOnS3(AmazonS3Content content) throws AmazonWSException {
-        LOGGER.trace("Deploying Content: {}", ToStringBuilder.reflectionToString(content, ToStringStyle.MULTI_LINE_STYLE));
-
-        if (!validateContent(content)) {
-            throw new AmazonWSException("Invalid content");
-        }
-
-        AmazonS3 conn = new AmazonS3Client(credentials, clientConfig);
-        ObjectMetadata metadata = new ObjectMetadata();
-        metadata.setContentType(content.getMimeType());
-        StringBuilder targetFolder = new StringBuilder(this.s3Bucket);
-        if (!StringUtils.endsWith(targetFolder.toString(), URL_SUB_DIRECTORY_SEPARATOR) & !StringUtils.startsWith(content.getSubDirectory(), URL_SUB_DIRECTORY_SEPARATOR)) {
-            targetFolder.append(URL_SUB_DIRECTORY_SEPARATOR);
-
-        }
-        targetFolder.append(content.getSubDirectory());
-        try {
-            PutObjectResult result = conn.putObject(targetFolder.toString(), content.getContentLabel(), content.getContent(), metadata);
-            if (result != null) {
-                return buildUrl(content.getSubDirectory(), content.getContentLabel());
-            } else {
-                return null;
-            }
-
-        } catch (Exception e) {
-            throw new AmazonWSException(e.getMessage(), e);
-        }
-    }
-
-    @Override
     public String deploy(String contentType, InputStream contentStream, String destKey) throws AmazonWSException {
 
         AmazonS3Content content = new AmazonS3Content(s3Bucket, contentType, contentStream, destKey);

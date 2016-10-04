@@ -9,18 +9,6 @@ import java.io.InputStream;
 public interface IAmazonWSClient {
 
     /**
-     * Push a file/object to S3.
-     *
-     * @param content - The content do write
-     * @return The URL of the S3 location the file/object was created to.
-     * @throws AmazonWSException if deploying on amazon is problematic
-     * @deprecated Renamed to deploy and changed so AmazonS3Content is
-     * constructed inside the function.
-     */
-    @Deprecated
-    String deployOnS3(AmazonS3Content content) throws AmazonWSException;
-
-    /**
      * Push a file/object onto S3.
      *
      * @param contentType - The content type

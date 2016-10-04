@@ -33,27 +33,13 @@ public class AmazonWSClientTestIT {
     @Test
     public void uploadObject() throws IOException, AmazonWSException {
 
-        //       ObjectListing objects = conn.listObjects("static.cms.yp.ca");
-//        do {
-//            for (S3ObjectSummary objectSummary : objects.getObjectSummaries()) {
-//                System.out.println(objectSummary.getKey() + "\t" +
-//                        objectSummary.getSize() + "\t" +
-//                        StringUtils.fromDate(objectSummary.getLastModified()));
-//            }
-//            objects = conn.listNextBatchOfObjects(objects);
-//        } while (objects.isTruncated());
         BufferedImage image = ImageIO.read(AmazonWSClientTestIT.class.getResourceAsStream("/backgound180X180.jpg"));
 
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         ImageIO.write(image, "gif", os);
         InputStream is = new ByteArrayInputStream(os.toByteArray(), 0, os.size());
 
-        //ObjectMetadata metadata=new ObjectMetadata();
-        // metadata.setContentLength(os.toByteArray().length);
-        // metadata.setContentType("image/jpeg");
-        //PutObjectResult result= conn.putObject("static.cms.yp.ca/facebook/logo", "backgound180X180.jpg", is, metadata);
-        AmazonS3Content content = new AmazonS3Content("facebook/logo", "image/jpeg", is, "backgound180X180.jpg");
-        String s3Url = amazonS3Client.deployOnS3(content);
+        String s3Url = amazonS3Client.deploy("image/jpeg",is,"backgound180X180.jpg");
         LOGGER.info(s3Url);
 
         HttpURLConnection.setFollowRedirects(false);
