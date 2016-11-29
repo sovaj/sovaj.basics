@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<acMessage>
+	<!--Optional: -->
+	<operation>create</operation>
+	<!--Optional: -->
+	<contentElements>
+		<!--Zero or more repetitions: -->
+		<contentElement>
+			<merchantId>6113775</merchantId>
+			<!--Optional: -->
+			<contentTypeId>1000</contentTypeId>
+			<!--Optional: -->
+            <sourceDateTime>2013-05-15</sourceDateTime>
+			<!--Optional: -->
+			<profileId>2000</profileId>
+			<!--Optional: -->
+			<sourceSystem>AC</sourceSystem>
+			<!--Optional: -->
+			<origin>AC</origin>
+			<!--Optional: -->
+			<searchable>false</searchable>
+			<!--Optional: -->
+			<effectiveDate>2013-05-30</effectiveDate>
+			<!--Optional: -->
+			<expirationDate>2014-05-30</expirationDate>
+			<!--You have a CHOICE of the next 4 items at this level -->
+			<businessHoursList>
+				<!--Zero or more repetitions: -->
+				<businessHours>
+					<dayCode>1</dayCode>
+					<hourFrom>0900</hourFrom>
+					<hourTo>1700</hourTo>
+				</businessHours>
+				<businessHours>
+					<dayCode>2</dayCode>
+					<hourFrom>0900</hourFrom>
+					<hourTo>1700</hourTo>
+				</businessHours>
+				<businessHours>
+					<dayCode>3</dayCode>
+					<hourFrom>0900</hourFrom>
+					<hourTo>1700</hourTo>
+				</businessHours>
+				<businessHours>
+					<dayCode>4</dayCode>
+					<hourFrom>0900</hourFrom>
+					<hourTo>1700</hourTo>
+				</businessHours>
+				<businessHours>
+					<dayCode>5</dayCode>
+					<hourFrom>0900</hourFrom>
+					<hourTo>2300</hourTo>
+				</businessHours>
+				<businessHours>
+					<dayCode>6</dayCode>
+					<hourFrom>0900</hourFrom>
+					<hourTo>2300</hourTo>
+				</businessHours>
+				<businessHours>
+					<dayCode>7</dayCode>
+					<hourFrom>0900</hourFrom>
+					<hourTo>2300</hourTo>
+				</businessHours>
+			</businessHoursList>
+
+		</contentElement>
+	</contentElements>
+</acMessage>
