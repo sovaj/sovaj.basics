@@ -4,7 +4,7 @@
 
     <groupId>io.sovaj.basics</groupId>
     <artifactId>basics-parent</artifactId>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <name>Basics tool for a good application</name>
@@ -28,7 +28,7 @@
         <url>https://github.com/sovaj/sovaj.basics</url>
         <connection>scm:git:git://github.com/sovaj/sovaj.basics.git</connection>
         <developerConnection>scm:git:git@github.com:sovaj/sovaj.basics.git</developerConnection>
-      <tag>basics-parent-1.0.0.3</tag>
+      <tag>HEAD</tag>
   </scm>
 
     <developers>
