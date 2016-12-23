@@ -3,7 +3,7 @@
     <parent>
         <artifactId>basics-parent</artifactId>
         <groupId>io.sovaj.basics</groupId>
-        <version>1.0.0.1-SNAPSHOT</version>
+        <version>1.0.0.2-RELEASE</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
