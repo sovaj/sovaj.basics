@@ -9,7 +9,7 @@
     <groupId>io.sovaj.basics</groupId>
     <artifactId>basics-spring-security</artifactId>
 
-    <name>sovaj :: ${project.artifactId} :: ${project.packaging}</name>
+    <name>SOVAJ :: ${project.artifactId}</name>
     <dependencies>
         <dependency>
             <groupId>org.springframework.security</groupId>

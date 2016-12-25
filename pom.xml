@@ -7,7 +7,7 @@
     <version>1.0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
-    <name>Basics tool for a good application</name>
+    <name>SOVAJ :: ${project.artifactId}</name>
     <description>Project to help in developing robust applications</description>
     <url>https://github.com/sovaj/sovaj.basics</url>
 

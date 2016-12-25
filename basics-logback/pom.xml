@@ -10,7 +10,7 @@
 
     <groupId>io.sovaj.basics</groupId>
     <artifactId>basics-logback</artifactId>
-    <name>sovaj :: ${project.artifactId} :: ${project.packaging}</name>
+    <name>SOVAJ :: ${project.artifactId}</name>
     <description>Outil pour logback, SLF4j v1.6</description>
 
     <dependencies>

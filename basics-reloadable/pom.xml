@@ -9,7 +9,7 @@
 
     <artifactId>basics-reloadable</artifactId>
 
-    <name>sovaj :: ${project.artifactId} :: ${project.packaging}</name>
+    <name>SOVAJ :: ${project.artifactId}</name>
 
 
      <dependencies>
