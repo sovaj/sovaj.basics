@@ -43,13 +43,7 @@
             <email>manuel.ferland@yahoo.ca</email>
             <url>https://github.com/manolomtl</url>
             <id>manolomtl</id>
-        </developer>
-        <developer>
-            <name>Pablo A. Fernandez Varela</name>
-            <email>pfernand@gmail.com</email>
-            <url>https://github.com/pfernan</url>
-            <id>pfernan</id>
-        </developer>
+        </developer> 
     </developers>
 
 
@@ -124,6 +118,8 @@
         <module>basics-core</module>
         <module>basics-mongo</module>
         <module>basics-hibernate</module>
+        <module>basics-jaxb</module>
+        <module>basics-jms</module>
         <module>basics-logback</module>
         <module>basics-profiling</module>
         <module>basics-reloadable</module>
@@ -146,13 +142,6 @@
                 <artifactId>jmockit</artifactId>
                 <version>${jmockit.version}</version>
                 <scope>test</scope>
-            </dependency>
-
-            <!-- Project module-->
-            <dependency>
-                <groupId>io.sovaj.basics</groupId>
-                <artifactId>basics-hibernate</artifactId>
-                <version>${project.version}</version>
             </dependency>
 
             <!-- CXF -->
@@ -225,6 +214,22 @@
                 <version>${spring.integration-version}</version>
             </dependency>
 
+            <!-- Project module-->
+            <dependency>
+                <groupId>io.sovaj.basics</groupId>
+                <artifactId>basics-hibernate</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.sovaj.basics</groupId>
+                <artifactId>basics-jaxb</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.sovaj.basics</groupId>
+                <artifactId>basics-jms</artifactId>
+                <version>${project.version}</version>
+            </dependency>
             <dependency>
                 <groupId>io.sovaj.basics</groupId>
                 <artifactId>basics-spring-batch</artifactId>

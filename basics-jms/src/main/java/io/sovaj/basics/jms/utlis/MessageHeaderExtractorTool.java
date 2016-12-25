@@ -1,13 +1,16 @@
-package io.sovaj.basics.core.utlis;
+package io.sovaj.basics.jms.utlis;
 
 import java.util.Date;
 import java.util.Map;
-import org.springframework.integration.jms.JmsHeaders;
 
 public class MessageHeaderExtractorTool {
 
-    public static final String APPLICATION_ID = "ApplicationId";
-
+    public static final String MESSAGE_ID = "jms_messageId";
+    public static final String CORRELATION_ID = "jms_correlationId";
+    public static final String REPLY_TO = "jms_replyTo";
+    public static final String REDELIVERED = "jms_redelivered";
+    public static final String TYPE = "jms_type";
+    public static final String TIMESTAMP = "jms_timestamp";
     private final Map<String, Object> headerMap;
 
     public MessageHeaderExtractorTool(Map<String, Object> headerMap) {
@@ -27,8 +30,8 @@ public class MessageHeaderExtractorTool {
         return (String) headerMap.get(JmsHeaders.REPLY_TO);
     }
 
-    public String getApplicationId() {
-        return (String) headerMap.get(APPLICATION_ID);
+    public String getType() {
+        return (String) headerMap.get(JmsHeaders.TYPE);
     }
 
     public String getJmsMessageId() {
