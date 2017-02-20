@@ -1,5 +1,5 @@
 
-package io.sovaj.basics.jaxb.xml;
+package io.sovaj.basics.jaxb.xml.adapter;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

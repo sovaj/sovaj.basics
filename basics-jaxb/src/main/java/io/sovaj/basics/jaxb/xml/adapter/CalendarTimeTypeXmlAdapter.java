@@ -1,4 +1,4 @@
-package io.sovaj.basics.jaxb.xml;
+package io.sovaj.basics.jaxb.xml.adapter;
 
 import java.util.Calendar;
 

@@ -1,10 +1,9 @@
-package io.sovaj.basics.jaxb.xml;
+package io.sovaj.basics.jaxb.xml.adapter;
 
 import javax.xml.bind.annotation.adapters.XmlAdapter;
 
 public class IntegerTypeXmlAdapter extends XmlAdapter<String, Integer> {
 
-    @Override
     public Integer unmarshal(String value) {
         if (value == null || value.length() < 1) {
             return null;
@@ -12,7 +11,6 @@ public class IntegerTypeXmlAdapter extends XmlAdapter<String, Integer> {
         return Integer.valueOf(value);
     }
 
-    @Override
     public String marshal(Integer value) {
         if (value == null) {
             return null;
